@@ -2,6 +2,8 @@ language: python
 
 build_image: shippableimages/ubuntu1204_python
 
+commit_container: avinci/demo
+
 python:
   - 2.7
   - 3.3
