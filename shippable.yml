@@ -2,6 +2,14 @@ language: python
 
 build_image: shippableimages/ubuntu1204_python
 
+images:
+  image:
+    build:
+      type: docker
+      name: shippableimages/ubuntu1204_python
+      tag: latest
+      codePath: /home/avinci/src
+
 commit_container: avinci/demo
 
 python:
