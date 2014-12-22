@@ -8,7 +8,7 @@ images:
       type: docker
       name: shippableimages/ubuntu1204_python
       tag: latest
-      codePath: /home/avinci/src
+      code_path: /home/avinci/src
 
 commit_container: avinci/demo
 
