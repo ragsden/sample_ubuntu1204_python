@@ -10,7 +10,7 @@ images:
       tag: latest
       code_path: /home/avinci/src
 
-commit_container: avinci/demo
+commit_container: ragster/demo
 
 python:
   - 2.7
