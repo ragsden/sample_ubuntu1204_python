@@ -1,12 +1,12 @@
 language: python
 
-build_image: shippableimages/ubuntu1204_python
+build_image: shippable/ubuntu1204_python
 
 images:
   image:
     build:
       type: docker
-      name: shippableimages/ubuntu1204_python
+      name: shippable/ubuntu1204_python
       tag: latest
       code_path: /home/avinci/src
 
