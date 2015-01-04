@@ -28,13 +28,13 @@ install:
 
 # Make folders for the reports
 before_script:
-  - mkdir -p shippable/testresults
-  - mkdir -p shippable/codecoverage
+  - cd $SHIPPABLE_REPO_DIR && mkdir -p shippable/testresults
+  - cd $SHIPPABLE_REPO_DIR && mkdir -p shippable/codecoverage
 
 script:
   - env
   - ls
   - echo $PWD
-  - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-  - which python && coverage run --branch test.py
-  - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
+  - cd $SHIPPABLE_REPO_DIR && nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - cd $SHIPPABLE_REPO_DIR && which python && coverage run --branch test.py
+  - cd $SHIPPABLE_REPO_DIR && which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
