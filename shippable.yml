@@ -1,16 +1,6 @@
 language: python
 
 build_image: ragster/ep
-
-images:
-  image:
-    build:
-      type: docker
-      name: ragster/myrags
-      tag: latest
-      code_path: /home/avinci/src
-    push: true
-    deploy: true
     
 commit_container: ragster/demo
 
