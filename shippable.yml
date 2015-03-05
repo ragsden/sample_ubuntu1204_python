@@ -1,8 +1,8 @@
 language: python
 
-build_image: ragster/ep
+#build_image: ragster/ep
     
-commit_container: ragster/demo
+#commit_container: ragster/demo
 
 python:
   - 2.7
