@@ -24,6 +24,7 @@ before_script:
   - mkdir -p shippable/codecoverage
 
 script:
+  - exit 0
   - env
   - ls
   - echo $PWD
