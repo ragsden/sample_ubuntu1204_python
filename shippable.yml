@@ -16,7 +16,7 @@ before_install:
   - source $HOME/sample_ve/bin/activate
   
 install:
-  - pip install -r requirements.txt
+  - shippable_retry pip install -r requirements.txt
 
 # Make folders for the reports
 before_script:
