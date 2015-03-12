@@ -1,6 +1,6 @@
 language: python
 
-#build_image: ragster/ep
+build_image: shipimg/ubuntu1204_python
     
 #commit_container: ragster/demo
 
